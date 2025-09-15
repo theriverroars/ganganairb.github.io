@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Robotics & Software</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portfolio of Your Name — robotics, controls, and software">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Your Name</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="about">
+      <h2>Hi — I’m Your Name</h2>
+      <p class="tagline">Robotics engineer • Controls • Machine learning</p>
+      <p>A short 1–2 line summary about what you build and what you want to do next.</p>
+      <p>
+        <a class="btn" href="#projects">See projects</a>
+        <a class="btn ghost" href="resume.pdf" target="_blank">Download resume</a>
+      </p>
+    </section>
+
+    <section class="wrap" id="projects">
+      <h3>Selected projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Short description: what, why, tech used (e.g., ROS2, PyTorch, JAX).</p>
+          <p><a href="https://github.com/YOURUSERNAME/project-one" target="_blank">Repo →</a></p>
+        </article>
+
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description: outcomes, demo link, or paper link.</p>
+          <p><a href="https://github.com/YOURUSERNAME/project-two" target="_blank">Repo →</a></p>
+        </article>
+
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/YOURUSERNAME" target="_blank">github.com/YOURUSERNAME</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year"></span> Your Name — Built with ❤️</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
