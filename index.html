@@ -20,33 +20,88 @@
   </header>
 
   <main>
-    <section class="hero wrap" id="about">
-        <img src="profile picture.jpeg" alt="Ganga Nair B" class="profile-pic" style="width:140px; border-radius:50%; margin-bottom:1em;">
+    <section class="hero wrap" id="about" style="display: flex; align-items: center; gap: 2em;">
+      <div style="flex: 1;">
         <h2>Hi — I’m Ganga Nair B</h2>
         <p class="tagline">Robotics engineer • Controls • Reinforcement learning</p>
         <p>I am a robotics engineer with a background in mechanical systems and a current M.Tech student at IISc, focusing on reinforcement learning and control for quadruped locomotion.</p>
         <p>
-            <a class="btn" href="#projects">See projects</a>
-            <a class="btn ghost" href="resume.pdf" target="_blank">Download resume</a>
-      </p>
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="resume.pdf" target="_blank">Download resume</a>
+        </p>
+      </div>
+      <img src="profile picture.jpeg" alt="Ganga Nair B" class="profile-pic" style="width:300px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
     </section>
 
-    <section class="wrap" id="projects">
-      <h3>Selected projects</h3>
+    <!-- Detailed About Me Section -->
+    <section class="wrap" id="about-detailed">
+      <h3>Current work and interests</h3>
+      <p>
+        I am an M.Tech student at IISc, Bangalore. My research emphasis is on reinforcement learning–based control for quadruped locomotion, with a focus on integrating planning and learning to improve robustness. I am currently exploring gait-based locomotion and adaptive gait strategies to achieve reward-driven performance. I am keen to collaborate on topics in learning-based control, reinforcement learning, motion planning for complex systems, hardware integration, and quadruped/legged robotics. 
+      </p>
+
+    </section>
+
+    <!-- Robotics Projects Section -->
+    <section class="wrap" id="robotics-projects">
+      <h3>Robotics Projects</h3>
       <div class="grid">
         <article class="card">
-          <h4>Project One</h4>
-          <p>Short description: what, why, tech used (e.g., ROS2, PyTorch, JAX).</p>
-          <p><a href="https://github.com/theriverroars/Project-2" target="_blank">Repo →</a></p>
+          <img src="quadruped_rl.jpg" alt="Quadruped RL Project" style="width:100%; border-radius:8px; margin-bottom:0.5em;">
+          <h4>Quadruped Locomotion with RL</h4>
+          <p>Developed reinforcement learning algorithms for stable and efficient quadruped walking in simulation and hardware. Used PyTorch, ROS2, and custom simulation environments.</p>
+          <p>
+            <a href="https://github.com/theriverroars/Project-2" target="_blank">Repo →</a> |
+            <a href="quadruped_rl_report.pdf" target="_blank">Report →</a> |
+            <a href="https://arxiv.org/abs/1234.5678" target="_blank">Paper →</a>
+          </p>
         </article>
+        <!-- Add more robotics projects here, following the same structure -->
+      </div>
+    </section>
 
+    <!-- Hardware Projects Section -->
+    <section class="wrap" id="hardware-projects">
+    <h3>Hardware Projects</h3>
+    <div class="grid">
+        <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
+        <img src="MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
+        <div>
+            <h4>Dynamic vibration absorber with MR Damper</h4>
+            <p>Designed, fabricated, and tested a dynamic vibration absorber using a Magneto-Rheological fluid based damper. Included mathematical modelling, CAD modelling and simulation, optimisation, fabrication of test setup and experimental validation.</p>
+            <p>
+            <a href="https://github.com/theriverroars/PDVA/tree/main" target="_blank">Repo →</a> |
+            <a href="https://github.com/theriverroars/PDVA/blob/main/ME4098D-BTech-Project-Report-Endsem(29-04-22).pdf" target="_blank">Report →</a>
+            </p>
+        </div>
+        </article>
+        <!-- Add more hardware projects here, following the same structure -->
+    </div>
+    </section>
+
+        <!-- Work Experience Section -->
+    <section class="wrap" id="work-experience">
+      <h3>Work Experience</h3>
+      <div class="grid">
         <article class="card">
-          <h4>Project Two</h4>
-          <p>Short description: outcomes, demo link, or paper link.</p>
-          <p><a href="https://github.com/theriverroars/iLQR_NN_for_Gym" target="_blank">Repo →</a></p>
+          <h4>Research Intern, Robotics Lab — IISc Bangalore</h4>
+          <p>May 2024 – Present</p>
+          <ul>
+            <li>Developed reinforcement learning algorithms for quadruped robots.</li>
+            <li>Worked on hardware-software integration and real-time control systems.</li>
+            <li>Collaborated with a multidisciplinary team to improve robot locomotion.</li>
+          </ul>
         </article>
-
-        <!-- Add more project cards here -->
+        <article class="card">
+          <h4>Mechanical Engineer — ABC Robotics Pvt Ltd</h4>
+          <p>Jul 2022 – Apr 2024</p>
+          <ul>
+            <li>Designed mechanical components for custom robotic platforms.</li>
+            <li>Led prototyping and testing of new hardware modules.</li>
+            <li>Coordinated with electronics and software teams for system integration.</li>
+          </ul>
+        </article>
+        <!-- Add more work experiences here -->
       </div>
     </section>
 
