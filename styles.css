@@ -25,6 +25,14 @@ body{
 nav a{color:var(--muted);text-decoration:none;margin-left:18px}
 nav a:hover{color:var(--text)}
 
+.highlight {
+  color: #7bd389; /* Choose any color you like */
+  font-weight: bold;
+  /* background: #595c5f; Optional: subtle background */
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
 .hero{padding:48px 20px 36px}
 .hero h2{margin:0;font-size:2.0rem}
 .tagline{color:var(--accent);margin:6px 0 12px;font-weight:600}
