@@ -37,29 +37,109 @@
     <section class="wrap" id="about-detailed">
         <h3>Current work and interests</h3>
         <p>
-        I am an M.Tech student at IISc, Bangalore. My research emphasis is on <span class="highlight">reinforcement learning–based control</span> for <span class="highlight">quadruped locomotion</span>, with a focus on integrating <span class="highlight">planning</span> and <span class="highlight">learning</span> to improve <span class="highlight">robustness</span>. I am currently exploring <span class="highlight">gait-based locomotion</span> and <span class="highlight">adaptive gait strategies</span> to achieve <span class="highlight">reward-driven performance</span>. I am keen to collaborate on topics in <span class="highlight">learning-based control</span>, <span class="highlight">reinforcement learning</span>, <span class="highlight">motion planning for complex systems</span>, <span class="highlight">hardware integration</span>, and <span class="highlight">quadruped/legged robotics</span>.
+        I am an M.Tech student at IISc, Bangalore. 
+        My research emphasis is on <span class="highlight">reinforcement learning–based control</span> for <span class="highlight">quadruped locomotion</span>, with a focus on integrating planning and learning to improve adaptability. I am currently exploring <span class="highlight">adaptive gait strategies</span> for quadrupeds to achieve reward-driven performance. 
+        I am keen to collaborate on:
         </p>
+        <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+          <li>Learning-based control</li>
+          <li>Reinforcement learning</li>
+          <li>Optimal control</li>
+          <li>Legged robotics</li>
+          <li>Mathematical modeling</li>
+          <li>Hardware integration</li>
+        </ul>
     </section>
 
-    <!-- Robotics Projects Section -->
-    <section class="wrap" id="robotics-projects">
-      <h3>Robotics Projects</h3>
-      <div class="grid">
-        <article class="card">
-          <img src="Recording 2025-07-18 063642.gif" alt="Quadruped RL Project" style="width:100%; border-radius:8px; margin-bottom:0.5em;">
-          <div>
-          <h4>Quadruped Locomotion with RL</h4>
-            <p>Developed reinforcement learning algorithms for stable and efficient quadruped walking in simulation and hardware. Used PyTorch, ROS2, and custom simulation environments.</p>
-            <p>
-                <a href="https://github.com/theriverroars/Project-2" target="_blank">Repo →</a> |
-                <a href="quadruped_rl_report.pdf" target="_blank">Report →</a> |
-                <a href="https://arxiv.org/abs/1234.5678" target="_blank">Paper →</a>
-            </p>
-          </div>  
-        </article>
-        <!-- Add more robotics projects here, following the same structure -->
-      </div>
-    </section>
+<!-- Robotics Projects Section -->
+<section class="wrap" id="robotics-projects">
+  <h3>Robotics Projects</h3>
+
+  <!-- Quadruped Project -->
+  <article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+    
+    <!-- First row: GIF (left) + Diagram (right) -->
+    <div style="grid-column: 1 / 2;">
+      <img src="Recording 2025-07-18 063642.gif" 
+           alt="Quadruped RL Project" 
+           style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+    </div>
+    <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+      <img src="Diagram_ICC_deploy.png" 
+           alt="Deployment Diagram" 
+           style="width:80%; max-height: 250px; border-radius:8px; margin-bottom:0.5em;">
+    </div>
+
+    <!-- Second row: description spans full width -->
+    <div style="grid-column: 1 / 3;">
+      <h4>Real-time gait adaptation using RL and MPC</h4>
+      <p>
+        Model-free RL policies for quadruped locomotion often converge to a single gait, limiting adaptability and efficiency. 
+        We propose a control framework for real-time gait adaptation using Model Predictive Path Integral (MPPI) control and a Dreamer-based module. 
+        Our approach jointly optimizes actions and continuous gait parameters to enable smooth transitions, velocity tracking, and energy-efficient locomotion. 
+        Simulation results on the Unitree Go1 show up to 55% lower energy consumption compared to fixed-gait RL policies, while maintaining accurate tracking and stable transitions across a range of target speeds.
+      </p>
+      <p>
+        <!-- Links if needed -->
+        <!-- <a href="https://github.com/theriverroars/Project-2" target="_blank">Repo →</a> |
+        <a href="quadruped_rl_report.pdf" target="_blank">Report →</a> |
+        <a href="https://arxiv.org/abs/1234.5678" target="_blank">Paper →</a> -->
+      </p>
+    </div>
+
+  </article>
+
+  <!-- iLQR with NN project -->
+  <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em; margin-bottom: 2em;">
+    <img src="cartpole.gif" alt="Cartpole success" style="width: 270px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
+    <div>
+      <h4>Control of system with unknown dynamics using iLQR and NN</h4>
+      <p>Optimal control methods like LQR often rely on accurate models of the system dynamics. However, in many real-world applications, these dynamics are unknown or difficult to model. In this project, we explore the use of iterative Linear Quadratic Regulator (iLQR) in a system with unknown dynamics by learning the approximate dynamics using a Neural Networks (NN) online.</p>
+      <p>
+        <a href="https://github.com/theriverroars/iLQR_NN_for_Gym" target="_blank">Repo →</a> |
+        <a href="https://github.com/theriverroars/iLQR_NN_for_Gym/blob/main/Topics_in_AI_Report-1.pdf" target="_blank">Report →</a>
+      </p>
+    </div>
+  </article>
+
+
+
+   <!-- Smaller Projects Grid -->
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2em;">
+    
+    <!-- Card 1 -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Comparison b/w Kimera and RTAB</h5>
+      <p style="font-size: 0.9em;">3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Frontier Exploration</h5>
+      <p style="font-size: 0.9em;">Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Formation control</h5>
+      <p style="font-size: 0.9em;">Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Option Critic Implementation</h5>
+      <p style="font-size: 0.9em;">Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
+    </article>
+
+  </div>
+
+</section>
+
+
 
     <!-- Hardware Projects Section -->
     <section class="wrap" id="hardware-projects">
@@ -92,7 +172,38 @@
     </div>
     </section>
 
-        <!-- Work Experience Section -->
+
+    <section class="wrap" id="patents-publications">
+    <h3>Patents & Publications</h3>
+    <div class="grid">
+      <!-- Publications & Presentations -->
+      <div>
+        <h4>Publications & Presentations</h4>
+        <ul>
+          <li>
+            <strong>Ganga Nair B</strong>, et al. "Real-time gait adaptation for quadruped robots using RL and MPC." <em>Accepted at the Eleventh Indian Control Conference (ICC)</em>, 2025.
+            <br>
+            <!-- <a href="https://arxiv.org/abs/1234.5678" target="_blank">Paper</a> |
+            <a href="quadruped_rl_presentation.pdf" target="_blank">Presentation</a> -->
+          </li>
+          <li>
+            <strong>Ganga Nair B</strong>, et al. "Real-time gait adaptation for quadruped robots using RL and MPC." <em>Presented at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.</em>.
+            <br>
+            <!-- <a href="https://link.springer.com/chapter/10.1007/978-981-99-1288-9_48" target="_blank">Paper</a> -->
+          </li>
+          <li>
+            <strong>Ganga Nair B</strong>, et al. "Modelling and Simulation of Magneto-Rheological Fluid in a Damper Using COMSOL" <em>Advances in Manufacturing, Automation, Design and Energy Technologies, ICoFT 2020, Lecture Notes in Mechanical Engineering, Springer, Singapore</em>.
+            <br>
+            <a href="https://link.springer.com/chapter/10.1007/978-981-99-1288-9_48" target="_blank">Paper</a>
+          </li>
+          <li>
+            Patent: Jagadeesha T., Ganga N.B., et al., Magneto-rheological Fluid-Based Dynamic Vibration Absorber, Indian Patent Application No. 202241036483, filed Jun 24, 2022. Status: Patent pending.
+            <br>
+            <!-- <a href="https://link.springer.com/chapter/10.1007/978-981-99-1288-9_48" target="_blank">Paper</a> -->
+          </li>
+          
+          <!-- Add more publications/presentations here -->
+                   <!-- Work Experience Section -->
     <section class="wrap" id="work-experience">
       <h3>Work Experience</h3>
       <div class="grid">
@@ -117,12 +228,43 @@
         <!-- Add more work experiences here -->
       </div>
     </section>
+        </ul>
+      </div>
+      <!-- Patents
+      <div>
+        <h4>Patents</h4>
+        <ul>
+          <li>
+            <strong>Dynamic Vibration Absorber with MR Damper</strong><br>
+            Patent Application No: IN2024123456, Filed: 2024
+          </li>
+          <li>
+            <strong>Adaptive Gait Control System for Legged Robots</strong><br>
+            Patent Application No: IN2024127890, Filed: 2025
+          </li>
+          
+        </ul>
+      </div> -->
+    </div>
+  </section>
 
-    <section class="wrap" id="contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:ganga.nair.biju@gmail.com">ganga.nair.biju@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/theriverroars" target="_blank">github.com/theriverroars</a></p>
-    </section>
+  <section class="wrap" id="contact">
+    <h3>Contact</h3>
+    <p>
+      <a href="mailto:ganga.nair.biju@gmail.com" style="margin-right:20px;" title="Email">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#7bd389" style="vertical-align:middle;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+      </a>
+      <a href="mailto:ganganairb@iisc.ac.in" style="margin-right:20px;" title="Email">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#7bd389" style="vertical-align:middle;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ganga-nair-8b9014186/" target="_blank" style="margin-right:20px;" title="LinkedIn">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#7bd389" style="vertical-align:middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://github.com/theriverroars" target="_blank" title="GitHub">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#7bd389" style="vertical-align:middle;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .321.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+    </p>
+  </section>
   </main>
 
   <footer class="site-footer">

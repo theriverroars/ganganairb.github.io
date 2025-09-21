@@ -2,6 +2,7 @@
   --bg:#0f1724;
   --card:#0b1220;
   --muted:#9aa4b2;
+  /* --accent:#534fc7; */
   --accent:#7bd389;
   --text:#e6eef6;
   --radius:12px;
@@ -10,6 +11,7 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
+
 body{
   margin:0;
   background:linear-gradient(180deg,var(--bg),#081022);
@@ -19,19 +21,30 @@ body{
   line-height:1.5;
 }
 .wrap{max-width:var(--wrap);margin:0 auto;padding:48px 20px}
-.site-header{background:transparent;position:sticky;top:0;z-index:10}
+.site-header{background:#0f1724;position:sticky;top:0;z-index:10;opacity: 0.9; padding-top: 0px; padding-bottom: 0px}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between}
 .logo{margin:0;font-size:1.2rem;letter-spacing:0.4px}
 nav a{color:var(--muted);text-decoration:none;margin-left:18px}
 nav a:hover{color:var(--text)}
 
 .highlight {
-  color: #7bd389; /* Choose any color you like */
+  /* color: #3d3b7b; Choose any color you like */
+  color: #7bd389;
   font-weight: bold;
   /* background: #595c5f; Optional: subtle background */
   padding: 0 2px;
   border-radius: 3px;
 }
+
+/* Make a Section for bullet points */
+ul {
+  list-style-type: disc; /* Use disc bullets */
+  margin-left: 20px; /* Indent the list */
+  padding-left: 0; /* Remove default padding */
+}
+
+
+
 
 .hero{padding:48px 20px 36px}
 .hero h2{margin:0;font-size:2.0rem}
