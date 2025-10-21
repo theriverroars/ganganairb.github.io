@@ -51,7 +51,14 @@ ul {
 .tagline{color:var(--accent);margin:6px 0 12px;font-weight:600}
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#022; text-decoration:none;margin-right:8px}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+.hero.wrap {
+  margin-bottom: -15px; /* Reduce space below hero section */
+}
 
+#about-detailed {
+  margin-top: 0;       /* Remove extra space above current work section */
+  padding-top: 0;      /* Remove extra padding if any */
+}
 h3{margin-top:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
 .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
