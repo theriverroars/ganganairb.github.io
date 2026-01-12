@@ -54,24 +54,38 @@
   <!-- News & Highlights (place after the "Current work and interests" section and before Robotics Projects) -->
   <section class="wrap" id="news-highlights" style="margin-top: 8px;">
     <h3>News & Highlights</h3>
-    <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc; gap:8px;">
+          <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc; gap:8px;">
       <li>
-        <strong>Sep 2025 — Accepted — ICC 2025:</strong>
-        Paper "Real-time gait adaptation for quadruped robots using RL and MPC" accepted at the Eleventh Indian Control Conference (ICC). 
+        <strong>Dec 2025 — Presented — ICC 2025:</strong>
+        Oral presentation on paper titled "Real-time gait adaptation for quadruped robots using RL and MPC" at the Eleventh Indian Control Conference (ICC). 
         <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Details →</a>
       </li>
+
       <li>
-        <strong>Aug 2025 — Late Breaking Results — 2025 Humanoids Conference:</strong>
+        <strong>Sep 2025 — Late Breaking Results — 2025 Humanoids Conference:</strong>
         Poster presented on "Real-time gait adaptation for quadruped robots using RL and MPC" at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.
       </li>
       <!-- Add more highlights as list items here -->
+
       <li>
         <strong>Aug 2025 — Received Kanaka Award Grant — 2025 Humanoids Conference:</strong>
         Received Kanaka Award Grant at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.
       </li>
+
+
+      <li>
+        <strong>Aug 2025 — Accepted — ICC 2025:</strong>
+        Paper "Real-time gait adaptation for quadruped robots using RL and MPC" accepted at the Eleventh Indian Control Conference (ICC). 
+        <!-- <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Details →</a> -->
+      </li>
     </ul>
 
+
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 12px;">
+      <figure style="margin: 0;">
+        <img src="ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+        <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at Indian Control Conference 2025</figcaption>
+      </figure>
       <figure style="margin:0;">
         <img src="poster_humanoids.jpg" alt="Presenting Poster at Humanoids 2025" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting Poster at Humanoids 2025</figcaption>
@@ -82,10 +96,10 @@
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Receiving Kanaka Award</figcaption>
       </figure>
 
-      <figure style="margin:0;">
+      <!-- <figure style="margin:0;">
         <img src="presenting_kanaka_miura.jpeg" alt="Presenting at the Women in Engineering conf" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at the Women in Engineering meet</figcaption>
-      </figure>
+      </figure> -->
 
     </div>
   </section>
@@ -129,11 +143,57 @@
 
   </article>
 
-  <!-- iLQR with NN project -->
+  <!-- Quadruped CPG-RL Project -->
+  <article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+  
+  <!-- First row: GIF (left) + Diagram (right) -->
+  <div style="grid-column: 1 / 2;">
+    <img src="cpg_rl_quadruped.gif" 
+         alt="Quadruped locomotion using CPG-RL" 
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+    <img src="cpg_rl_framework.png" 
+         alt="CPG-RL control framework" 
+         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+
+  <!-- Second row: description spans full width -->
+  <div style="grid-column: 1 / 3;">
+    <h4>Energy-Efficient Quadruped Locomotion using CPG-RL</h4>
+    <p>
+      Legged animals rely on rhythmic motor primitives to achieve robust and efficient locomotion across diverse terrains.
+      Inspired by this principle, we explore a hybrid locomotion framework that combines
+      <strong>Central Pattern Generators (CPGs)</strong> with <strong>Reinforcement Learning</strong>
+      to achieve adaptive and energy-efficient quadruped walking.
+    </p>
+    <p>
+      In this work, CPGs encode the underlying rhythmic structure and phase coordination of leg motions,
+      while RL learns to modulate gait parameters in response to terrain and task demands.
+      This separation introduces strong inductive bias, improving stability, reducing sample complexity,
+      and enabling smooth transitions between locomotion patterns.
+    </p>
+    <p>
+      The framework is being developed in collaboration with
+      <strong>Prof. Jun Morimoto (Kyoto University)</strong>.
+    </p>
+    <p>
+      <!-- Optional links -->
+      <!-- <a href="https://github.com/theriverroars/cpg-rl-quadruped" target="_blank">Code →</a> | -->
+      <!-- <a href="cpg_rl_report.pdf" target="_blank">Report →</a> | -->
+      <!-- <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">Preprint →</a> -->
+    </p>
+  </div>
+
+</article>
+
+  
+
+  <!-- iLQR with NN project
   <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em; margin-bottom: 2em;">
     <img src="cartpole.gif" alt="Cartpole success" style="width: 270px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
     <div>
-      <h4>Control of system with unknown dynamics using iLQR and NN</h4>
+      <h4>Control of system with unknown  dynamics using iLQR and NN</h4>
       <p>Optimal control methods like LQR often rely on accurate models of the system dynamics. However, in many real-world applications, these dynamics are unknown or difficult to model. In this project, we explore the use of iterative Linear Quadratic Regulator (iLQR) in a system with unknown dynamics by learning the approximate dynamics using a Neural Networks (NN) online.</p>
       <p>
         <a href="https://github.com/theriverroars/iLQR_NN_for_Gym" target="_blank">Repo →</a> |
@@ -142,38 +202,64 @@
     </div>
   </article>
 
-
+ -->
 
    <!-- Smaller Projects Grid -->
-  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2em;">
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2em; justify-items: center;">
+  <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; margin-top: 2em; justify-items: center;"> -->
+
+      <!-- iLQR with NN Project (Compact Card) -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="cartpole.gif" 
+          alt="iLQR with online neural dynamics learning" 
+          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Model-Based Control with Online Dynamics Learning</h5>
+      <p style="font-size: 0.9em;">
+        Explored control of nonlinear systems with unknown dynamics by integrating iLQR with an online-trained neural network for dynamics estimation.
+      </p>
+      <p style="font-size: 0.85em;">
+        <a href="https://github.com/theriverroars/iLQR_NN_for_Gym" target="_blank">Code →</a> |
+        <a href="https://github.com/theriverroars/iLQR_NN_for_Gym/blob/main/Topics_in_AI_Report-1.pdf" target="_blank">Report →</a>
+      </p>
+    </article>
+
+    <!-- Safe Swarm Navigation with CBFs -->
+    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+      <img src="swarm_cbf.png" 
+          alt="Safe swarm navigation using control barrier functions" 
+          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <h5>Safe Swarm Navigation using Control Barrier Functions</h5>
+      <p style="font-size: 0.9em;">
+        Designed a control framework for multi-quadrotor swarms using Control Barrier Functions, combined with priority-based ordering to enable collision-free traversal through constrained environments.
+      </p>
+    </article>
+
     
-    <!-- Card 1 -->
+
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
       <img src="SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
       <h5>Comparison b/w Kimera and RTAB</h5>
       <p style="font-size: 0.9em;">3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
     </article>
 
-    <!-- Card 2 -->
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
       <img src="Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
       <h5>Frontier Exploration</h5>
       <p style="font-size: 0.9em;">Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
-    </article>
+    </article> -->
 
-    <!-- Card 3 -->
+
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
       <img src="Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
       <h5>Formation control</h5>
       <p style="font-size: 0.9em;">Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
     </article>
 
-    <!-- Card 4 -->
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
       <img src="fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
       <h5>Option Critic Implementation</h5>
       <p style="font-size: 0.9em;">Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
-    </article>
+    </article> -->
 
   </div>
 
@@ -324,8 +410,18 @@
     <h3>Photo Gallery</h3>
     <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 8px;">
       <figure style="display: inline-block; margin: 0 12px 0 0;">
+        <img src="ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="height:180px; border-radius:10px;">
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at Indian Control Conference 2025</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; margin: 0 12px 0 0;">
+        <img src="AIAS ppt2.jpeg" alt="Presenting at AIAS Cohort 4" style="height:180px; border-radius:10px;">
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the AI & Automation Cohort</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" style="height:180px; border-radius:10px;">
-        <figcaptio style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the Women in Engineering meet</figcaption>
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the Women in Engineering meet</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="kanaka_miura.jpg" alt="Gallery Photo 2" style="height:180px; border-radius:10px;">
