@@ -55,10 +55,15 @@
   <section class="wrap" id="news-highlights" style="margin-top: 8px;">
     <h3>News & Highlights</h3>
           <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc; gap:8px;">
-            <li>
-              <strong>Feb 17, 2026 — Visiting Kyoto University:</strong>
-              Collaborating with Prof. Jun Morimoto on Central Pattern Generator (CPG)-based locomotion research as part of the India Japan Circulation of Talented Youths in Science Program (LOTUS).
-            </li>
+      <li>
+        <strong>Mar 1, 2026 - IROS Submission </strong>
+        Submitted paper titled "STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching" to the 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
+        <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Details →</a>
+      </li>
+      <li>
+        <strong>Feb 17, 2026 — Visiting Kyoto University:</strong>
+        Collaborating with Prof. Jun Morimoto on Central Pattern Generator (CPG)-based locomotion research as part of the India Japan Circulation of Talented Youths in Science Program (LOTUS).
+      </li>
       <li>
         <strong>Dec 2025 — Presented — ICC 2025:</strong>
         Oral presentation on paper titled "Real-time gait adaptation for quadruped robots using RL and MPC" at the Eleventh Indian Control Conference (ICC). 
@@ -117,7 +122,7 @@
     
     <!-- First row: GIF (left) + Diagram (right) -->
     <div style="grid-column: 1 / 2;">
-      <img src="Hardware_test.gif" 
+      <img src="hardware results.gif" 
            alt="Quadruped RL Project" 
            style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
     </div>
@@ -136,6 +141,7 @@
         Our approach jointly optimizes actions and continuous gait parameters to enable smooth transitions, velocity tracking, and energy-efficient locomotion. 
         Simulation results on the Unitree Go1 show up to 40% lower energy consumption compared to fixed-gait RL policies, while maintaining accurate tracking and stable transitions across a range of target speeds.
         <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website →</a> |
+        <a href="https://arxiv.org/abs/2510.20706 " target="_blank">Paper →</a>
       </p>
       <p>
         <!-- Links if needed -->
@@ -147,8 +153,103 @@
 
   </article>
 
-  <!-- Quadruped CPG-RL Project -->
-  <article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+
+
+
+<!-- STRIDE Dynamics Model Project -->
+<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+  
+  <!-- First row: Robot demo (left) + Method diagram (right) -->
+  <div style="grid-column: 1 / 2;">
+    <img src="Simulation gif.gif" 
+         alt="Quadruped locomotion using STRIDE dynamics model" 
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+
+  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+    <img src="STRIDE_concept.png" 
+         alt="STRIDE structured generative dynamics model" 
+         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+
+  <!-- Second row: description -->
+  <div style="grid-column: 1 / 3;">
+    <h4>STRIDE: Physics-Guided Generative Dynamics for Robots</h4>
+
+    <p>
+      We propose <strong>STRIDE</strong>, a dynamics learning framework for robots operating in 
+      contact-rich environments. The model combines a 
+      <strong>Lagrangian Neural Network (LNN)</strong> to capture structured rigid-body mechanics 
+      with a <strong>generative residual model</strong> based on Conditional Flow Matching (CFM) 
+      to represent stochastic interaction effects such as friction and impacts.
+    </p>
+
+    <p>
+      This structured–stochastic decomposition improves long-horizon prediction stability 
+      and contact modeling, enabling more reliable <strong>model predictive control (MPPI)</strong> 
+      for legged robots. The approach is validated on the <strong>Unitree Go1 quadruped</strong> 
+      and <strong>Unitree G1 humanoid</strong> in simulation and hardware experiments.
+    </p>
+
+    <p>
+      <!-- Optional links -->
+      <!-- <a href="stride_paper.pdf" target="_blank">Paper →</a> -->
+      <!-- <a href="https://github.com/username/stride" target="_blank">Code →</a> -->
+      <a href="https://prakrutk.github.io/STRIDE/" target="_blank">Website →</a>
+    </p>
+
+
+  </div>
+
+</article>
+
+<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+  
+  <!-- First row: Demo + Method diagram -->
+  <div style="grid-column: 1 / 2;">
+    <img src="PIML concept.png" 
+         alt="Safe optimal control using physics-informed learning" 
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+
+  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+    <img src="PIML method.png" 
+         alt="Physics-informed machine learning framework for safety-critical control" 
+         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+  </div>
+
+  <!-- Second row: description -->
+  <div style="grid-column: 1 / 3;">
+    <h4>Physics-Informed Learning for Safe and Optimal Control</h4>
+
+    <p>
+      Developed a <strong>physics-informed machine learning (PIML) framework</strong> to jointly optimize 
+      <strong>safety and performance</strong> for autonomous systems. The method formulates control as a 
+      <strong>state-constrained optimal control problem</strong> and learns the solution of the 
+      <strong>Hamilton–Jacobi–Bellman (HJB) PDE</strong> using neural networks, enabling scalable control for 
+      high-dimensional nonlinear systems.
+    </p>
+
+    <p>
+      Introduced a <strong>conformal prediction–based verification scheme</strong> that provides probabilistic 
+      safety guarantees and quantifies performance degradation due to learning errors. The framework was 
+      validated on several robotic tasks including <strong>autonomous navigation, pursuit-evasion, and 
+      multi-agent coordination</strong>, demonstrating improved safety and lower cost compared to constrained 
+      RL and MPC baselines.
+    </p>
+
+    <p>
+      <!-- Optional links -->
+      <!-- <a href="paper.pdf" target="_blank">Paper →</a> -->
+      <!-- <a href="https://github.com/username/piml-control" target="_blank">Code →</a> -->
+    </p>
+
+  </div>
+
+</article>
+
+<!-- Quadruped CPG-RL Project -->
+<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
   
   <!-- First row: GIF (left) + Diagram (right) -->
   <div style="grid-column: 1 / 2;">
@@ -157,29 +258,24 @@
          style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
   </div>
   <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
-    <img src="kyoto uni.png" 
+    <img src="Screenshot 2026-03-08 131904.png" 
          alt="CPG-RL control framework" 
-         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
   </div>
 
   <!-- Second row: description spans full width -->
   <div style="grid-column: 1 / 3;">
-    <h4>Energy-Efficient Quadruped Locomotion using CPG-RL</h4>
+    <h4>Quadruped Locomotion using CPG-RL - Study on Morphology-Aware Optimisation</h4>
     <p>
-      Legged animals rely on rhythmic primitives to achieve robust and efficient locomotion across diverse terrains.
+      All legged animals rely on rhythmic primitives to achieve robust and efficient locomotion across diverse terrains.
       Inspired by this principle, we explore a hybrid locomotion framework that combines
-      <strong>Central Pattern Generators (CPGs)</strong> with <strong>Reinforcement Learning</strong>
+      <strong>Central Pattern Generators (CPGs)</strong> with Bayesian Learning based optimisation techniques
       to achieve adaptive and energy-efficient quadruped walking.
     </p>
     <p>
-      In this work, CPGs encode the underlying rhythmic structure,
-      while a RL framework is used to modulate frequency, amplitude, and phase parameters in response to terrain and task demands.
-      This separation introduces strong inductive bias, improving stability, reducing sample complexity,
-      and enabling smooth transitions between locomotion patterns.
-    </p>
+      In this work, CPGs encode the underlying rhythmic structure. The parameters of the CPGs, including frequency, amplitude, and phase parameters, are optimised conditioned on the morphology using Conditional Bayesian Optimization. We us a Tree Parzen Estimator to model the performance landscape and guide the search.
       <p>
-      The framework is being developed in collaboration with
-      <strong>Prof. Jun Morimoto (Kyoto University)</strong>.
+      The framework is being developed in collaboration with <strong>Prof. Jun Morimoto (Kyoto University)</strong> ans tested on hardware.
     </p>
     <p>
       <!-- Optional links -->
@@ -190,7 +286,6 @@
   </div>
 
 </article>
-
   
 
   <!-- iLQR with NN project
@@ -273,7 +368,7 @@
 
     <!-- Hardware Projects Section -->
     <section class="wrap" id="hardware-projects">
-    <h3>Hardware Projects</h3>
+    <h3>Projects in Mechanical Engineering</h3>
     <div class="grid">
         <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
         <img src="MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
@@ -310,6 +405,18 @@
       <div>
         <!-- <h4>Publications & Presentations</h4> -->
         <ul>
+          <li>
+            <strong>Manan Tayal</strong>, et al. "A Robust Physics-Informed Machine Learning Framework for Safe and Optimal Control of Autonomous Systems" <em>Submitted to International Journal of Robotics Research (IJRR).</em>, 2026.
+            <br>
+            <!-- <a href="https://arxiv.org/abs/2510.20706" target="_blank">Paper</a> | -->
+            <!-- <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website</a> --> -->
+          </li>
+          <li>
+            <strong>Prakrut Kotecha</strong>, et al. "STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching" <em>Submitted to 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</em>, 2026.
+            <br>
+            <!-- <a href="https://arxiv.org/abs/2510.20706" target="_blank">Paper</a> | -->
+            <!-- <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website</a> --> -->
+          </li>
           <li>
             <strong>Ganga Nair B</strong>, et al. "Real-time gait adaptation for quadruped robots using RL and MPC." <em>Accepted at the Eleventh Indian Control Conference (ICC)</em>, 2025.
             <br>
@@ -387,6 +494,10 @@
   <h3>Awards & Acknowledgements</h3>
   <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc;">
     <li>
+      <strong>Project selected for LOTUS program 2025:</strong>
+      Selected for the India Japan Circulation of Talented Youths in Science Program (LOTUS) for 2025, enabling research collaboration with Kyoto University on CPG-based locomotion.
+    </li>
+    <li>
       <strong>Kanaka Award Grant — IEEE Humanoids Conference 2025:</strong>
       Received Kanaka Award Grant at the 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.
     </li>
@@ -413,6 +524,17 @@
     <section class="wrap" id="gallery" style="margin-top: 40px;">
     <h3>Photo Gallery</h3>
     <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 8px;">
+
+      <figure style="display: inline-block; margin: 0 12px 0 0;">
+        <img src="Japan.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;">
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Working at Kyoto</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; margin: 0 12px 0 0;">
+        <img src="RL_Workshop.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;">
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presented at RL Workshop, IISc</figcaption>
+      </figure>
+
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="height:180px; border-radius:10px;">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at Indian Control Conference 2025</figcaption>
@@ -425,11 +547,11 @@
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" style="height:180px; border-radius:10px;">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the Women in Engineering meet</figcaption>
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the IEEE Women in Engineering meet, Seoul</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="kanaka_miura.jpg" alt="Gallery Photo 2" style="height:180px; border-radius:10px;">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Receiving Kanaka Award</figcaption>
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Receiving Kanako Miura Award</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="poster_humanoids.jpg" alt="Gallery Photo 3" style="height:180px; border-radius:10px;">
@@ -438,7 +560,7 @@
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
         <img src="Exxon.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">ExxonMobil</figcaption>
+        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Site visit at ExxonMobil Singapore REfinery</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
