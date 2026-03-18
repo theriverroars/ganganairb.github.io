@@ -25,8 +25,9 @@ body{
 .site-header{background:#0f1724;position:sticky;top:0;z-index:10;opacity: 0.9; padding-top: 0px; padding-bottom: 0px}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between}
 .logo{margin:0;font-size:1.2rem;letter-spacing:0.4px}
-nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-nav a:hover{color:var(--text)}
+a, a:visited{color:var(--accent)}
+a:hover, a:focus-visible{color:var(--accent)}
+nav a{text-decoration:none;margin-left:18px}
 
 .highlight {
   /* color: #3d3b7b; Choose any color you like */
@@ -52,6 +53,28 @@ ul {
 .tagline{color:var(--accent);margin:6px 0 12px;font-weight:600}
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#022; text-decoration:none;margin-right:8px}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+}
+
+.contact-links a {
+  margin-right: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-projects-grid {
+  justify-items: stretch !important;
+}
+
+.small-projects-grid > .card {
+  width: 100%;
+}
 .hero.wrap {
   margin-bottom: -15px; /* Reduce space below hero section */
 }
@@ -142,6 +165,11 @@ main {
     gap: 0.9rem !important;
   }
 
+  .small-projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-items: stretch !important;
+  }
+
   #hardware-projects .card[style*="display: flex"] {
     flex-direction: column;
     align-items: stretch !important;
@@ -181,6 +209,25 @@ main {
 
   div[style*="grid-template-columns: repeat(4, 1fr)"] {
     grid-template-columns: 1fr !important;
+  }
+
+  .small-projects-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: stretch !important;
+  }
+
+  .small-projects-grid > .card {
+    width: 100% !important;
+    max-width: none;
+  }
+
+  .contact-links {
+    gap: 10px;
+  }
+
+  p, li, a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   #gallery > div {
