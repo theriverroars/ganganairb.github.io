@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ganga Resume — Robotics & Software</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="media/profile picture.jpeg">
   <meta name="description" content="Portfolio of Ganga Nair B — robotics, controls, and software">
 </head>
 <body>
@@ -14,7 +15,8 @@
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        
+        <!-- <a href="#contact">Contact</a> -->
       </nav>
     </div>
   </header>
@@ -27,7 +29,7 @@
         <p>I am a robotics engineer with a background in mechanical systems and a current M.Tech student at IISc, focusing on reinforcement learning and control for quadruped locomotion.</p>
         <p>
           <a class="btn" href="#projects">See projects</a>
-          <a class="btn ghost" href="Ganga_s_2_pager___shorter-4.pdf" target="_blank">Download resume</a>
+          <a class="btn ghost" href="media/Ganga_s_2_pager___shorter-4.pdf" target="_blank">Download resume</a>
         </p>
         <p style="margin: 40px 0 8px 0; font-weight: 600;">Contacts and Links</p>
         <p>
@@ -48,7 +50,7 @@
         </a>
       </p>
       </div>
-      <img src="profile picture.jpeg" alt="Ganga Nair B" class="profile-pic" style="width:300px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+      <img src="media/profile picture.jpeg" alt="Ganga Nair B" class="profile-pic" fetchpriority="high" decoding="async" style="width:300px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
     </section>
     
     
@@ -112,21 +114,21 @@
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 12px;">
       <figure style="margin: 0;">
-        <img src="ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at Indian Control Conference 2025</figcaption>
       </figure>
       <figure style="margin:0;">
-        <img src="poster_humanoids.jpg" alt="Presenting Poster at Humanoids 2025" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+        <img src="media/poster_humanoids.jpg" alt="Presenting Poster at Humanoids 2025" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting Poster at Humanoids 2025</figcaption>
       </figure>
 
       <figure style="margin:0;">
-        <img src="kanaka_miura.jpg" alt="Receiving award" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+        <img src="media/kanaka_miura.jpg" alt="Receiving award" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Receiving Kanako Miura Award</figcaption>
       </figure>
 
       <!-- <figure style="margin:0;">
-        <img src="presenting_kanaka_miura.jpeg" alt="Presenting at the Women in Engineering conf" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+        <img src="media/presenting_kanaka_miura.jpeg" alt="Presenting at the Women in Engineering conf" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at the Women in Engineering meet</figcaption>
       </figure> -->
 
@@ -134,7 +136,7 @@
   </section>
 
 <!-- Robotics Projects Section -->
-<section class="wrap" id="robotics-projects">
+<section class="wrap" id="projects">
   <h3>Robotics Projects</h3>
 
   <!-- Quadruped Project -->
@@ -142,14 +144,15 @@
     
     <!-- First row: GIF (left) + Diagram (right) -->
     <div style="grid-column: 1 / 2;">
-      <img src="hardware results.gif" 
-           alt="Quadruped RL Project" 
-           style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+      <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;">
+        <source src="media/hardware results.webm" type="video/webm">
+        <img src="media/hardware results.gif" alt="Quadruped RL Project" loading="lazy" decoding="async">
+      </video>
     </div>
     <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
-      <img src="Diagram_ICC_deploy.png" 
+      <img src="media/Diagram_ICC_deploy.png" 
            alt="Deployment Diagram" 
-           style="width:80%; max-height: 250px; border-radius:8px; margin-bottom:0.5em;">
+           style="width:80%; max-height: 250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
     </div>
 
     <!-- Second row: description spans full width -->
@@ -166,7 +169,7 @@
       <p>
         <!-- Links if needed -->
         <!-- <a href="https://github.com/theriverroars/Project-2" target="_blank">Repo →</a> |
-        <a href="quadruped_rl_report.pdf" target="_blank">Report →</a> |
+        <a href="media/quadruped_rl_report.pdf" target="_blank">Report →</a> |
         <a href="https://arxiv.org/abs/1234.5678" target="_blank">Paper →</a> -->
       </p>
     </div>
@@ -181,15 +184,16 @@
   
   <!-- First row: Robot demo (left) + Method diagram (right) -->
   <div style="grid-column: 1 / 2;">
-    <img src="Simulation gif.gif" 
-         alt="Quadruped locomotion using STRIDE dynamics model" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+    <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;" loading="lazy">
+      <source src="media/Simulation gif.webm" type="video/webm">
+      <img src="media/Simulation gif.gif" alt="Quadruped locomotion using STRIDE dynamics model" loading="lazy" decoding="async">
+    </video>
   </div>
 
   <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
-    <img src="STRIDE_concept.png" 
+    <img src="media/STRIDE_concept.png" 
          alt="STRIDE structured generative dynamics model" 
-         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description -->
@@ -227,15 +231,15 @@
   
   <!-- First row: Demo + Method diagram -->
   <div style="grid-column: 1 / 2;">
-    <img src="PIML concept.png" 
+    <img src="media/PIML concept.png" 
          alt="Safe optimal control using physics-informed learning" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
   </div>
 
   <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
-    <img src="PIML method.png" 
+    <img src="media/PIML method.png" 
          alt="Physics-informed machine learning framework for safety-critical control" 
-         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description -->
@@ -259,7 +263,7 @@
 
     <p>
       <!-- Optional links -->
-      <!-- <a href="paper.pdf" target="_blank">Paper →</a> -->
+      <!-- <a href="media/paper.pdf" target="_blank">Paper →</a> -->
       <!-- <a href="https://github.com/username/piml-control" target="_blank">Code →</a> -->
     </p>
 
@@ -272,14 +276,15 @@
   
   <!-- First row: GIF (left) + Diagram (right) -->
   <div style="grid-column: 1 / 2;">
-    <img src="Recording 2025-07-18 063642.gif" 
-         alt="Quadruped locomotion using CPG-RL" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+    <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;" loading="lazy">
+      <source src="media/Recording 2025-07-18 063642.webm" type="video/webm">
+      <img src="media/Recording 2025-07-18 063642.gif" alt="Quadruped locomotion using CPG-RL" loading="lazy" decoding="async">
+    </video>
   </div>
   <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
-    <img src="Screenshot 2026-03-08 131904.png" 
+    <img src="media/Screenshot 2026-03-08 131904.png" 
          alt="CPG-RL control framework" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;">
+         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description spans full width -->
@@ -299,7 +304,7 @@
     <p>
       <!-- Optional links -->
       <!-- <a href="https://github.com/theriverroars/cpg-rl-quadruped" target="_blank">Code →</a> | -->
-      <!-- <a href="cpg_rl_report.pdf" target="_blank">Report →</a> | -->
+      <!-- <a href="media/cpg_rl_report.pdf" target="_blank">Report →</a> | -->
       <!-- <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">Preprint →</a> -->
     </p>
   </div>
@@ -309,7 +314,7 @@
 
   <!-- iLQR with NN project
   <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em; margin-bottom: 2em;">
-    <img src="cartpole.gif" alt="Cartpole success" style="width: 270px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
+    <img src="media/cartpole.gif" alt="Cartpole success" style="width: 270px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;" loading="lazy" decoding="async">
     <div>
       <h4>Control of system with unknown  dynamics using iLQR and NN</h4>
       <p>Optimal control methods like LQR often rely on accurate models of the system dynamics. However, in many real-world applications, these dynamics are unknown or difficult to model. In this project, we explore the use of iterative Linear Quadratic Regulator (iLQR) in a system with unknown dynamics by learning the approximate dynamics using a Neural Networks (NN) online.</p>
@@ -328,9 +333,10 @@
 
       <!-- iLQR with NN Project (Compact Card) -->
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="cartpole.gif" 
-          alt="iLQR with online neural dynamics learning" 
-          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <video autoplay loop muted playsinline style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em; display:block;" loading="lazy">
+        <source src="media/cartpole.webm" type="video/webm">
+        <img src="media/cartpole.gif" alt="iLQR with online neural dynamics learning" loading="lazy" decoding="async">
+      </video>
       <h5>Model-Based Control with Online Dynamics Learning</h5>
       <p style="font-size: 0.9em;">
         Explored control of nonlinear systems with unknown dynamics by integrating iLQR with an online-trained neural network for dynamics estimation.
@@ -343,9 +349,9 @@
 
     <!-- Safe Swarm Navigation with CBFs -->
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="swarm_cbf.png" 
+      <img src="media/swarm_cbf.png" 
           alt="Safe swarm navigation using control barrier functions" 
-          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Safe Swarm Navigation using Control Barrier Functions</h5>
       <p style="font-size: 0.9em;">
         Designed a control framework for multi-quadrotor swarms using Control Barrier Functions, combined with priority-based ordering to enable collision-free traversal through constrained environments.
@@ -355,26 +361,26 @@
     
 
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <img src="media/SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Comparison b/w Kimera and RTAB</h5>
       <p style="font-size: 0.9em;">3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
     </article>
 
     <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <img src="media/Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Frontier Exploration</h5>
       <p style="font-size: 0.9em;">Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
     </article> -->
 
 
     <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <img src="media/Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Formation control</h5>
       <p style="font-size: 0.9em;">Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
     </article>
 
     <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
-      <img src="fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;">
+      <img src="media/fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Option Critic Implementation</h5>
       <p style="font-size: 0.9em;">Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
     </article> -->
@@ -390,7 +396,7 @@
     <h3>Projects in Mechanical Engineering</h3>
     <div class="grid">
         <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
-        <img src="MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
+        <img src="media/MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;" loading="lazy" decoding="async">
         <div>
             <h4>Dynamic vibration absorber with MR Damper</h4>
             <p>Designed, fabricated, and tested a dynamic vibration absorber using a Magneto-Rheological fluid based damper. Included mathematical modelling, CAD modelling and simulation, optimisation, fabrication of test setup and experimental validation.</p>
@@ -403,7 +409,7 @@
         <!-- Add more hardware projects here, following the same structure -->
 
         <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
-        <img src="Baja.png" alt="Suspension for Electric All-Terrain-Vehicle" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;">
+        <img src="media/Baja.png" alt="Suspension for Electric All-Terrain-Vehicle" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;" loading="lazy" decoding="async">
         <div>
             <h4>Suspension for Electric All-Terrain-Vehicle</h4>
             <p>Designed, simulated and fabricated an Electric All terrain Vehicle for Electric BAJA 2025. My focus was on suspension design and optimization for rough terrain including shock absorption, stability and steering performance, without compromising on manufacturability and cost-effectiveness.</p>
@@ -434,13 +440,13 @@
             <strong>Prakrut Kotecha</strong>, et al. "STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching" <em>Submitted to 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</em>, 2026.
             <br>
             <a href="https://arxiv.org/abs/2603.08478" target="_blank">Paper</a> |
-            <!-- <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website</a> --> 
+            <a href="https://prakrutk.github.io/STRIDE/" target="_blank">Website</a> 
           </li>
           <li>
             <strong>Ganga Nair B</strong>, et al. "Real-time gait adaptation for quadruped robots using RL and MPC." <em>Accepted at the Eleventh Indian Control Conference (ICC)</em>, 2025.
             <br>
             <a href="https://arxiv.org/abs/2510.20706" target="_blank">Paper</a> |
-            <a href="quadruped_rl_presentation.pdf" target="_blank">Presentation</a> 
+            <a href="media/quadruped_rl_presentation.pdf" target="_blank">Presentation</a> 
           </li>
           <li>
             <strong>Ganga Nair B</strong>, et al. "Real-time gait adaptation for quadruped robots using RL and MPC." <em>Presented at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.</em>.
@@ -481,7 +487,7 @@
       <div class="grid">
         <article class="card">
           <div style="display:flex; align-items:flex-start; gap:16px;">
-            <img src="M Logo.png" alt="ExxonMobil logo" style="width:110px; height:auto; object-fit:contain; margin-top:4px;">
+            <img src="media/M Logo.png" alt="ExxonMobil logo" style="width:110px; height:auto; object-fit:contain; margin-top:4px;" loading="lazy" decoding="async">
             <div>
               <h4>Project engineer - ExxonMobil Services and Technology Pvt Ltd</h4>
               <p>July 2022 – July 2024</p>
@@ -550,61 +556,61 @@
     <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 8px;">
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="Japan.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;">
+        <img src="media/Japan.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Working at Kyoto</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="RL_Workshop.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;">
+        <img src="media/RL_Workshop.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presented at RL Workshop, IISc</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="height:180px; border-radius:10px;">
+        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at Indian Control Conference 2025</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="AIAS ppt2.jpeg" alt="Presenting at AIAS Cohort 4" style="height:180px; border-radius:10px;">
+        <img src="media/AIAS ppt2.jpeg" alt="Presenting at AIAS Cohort 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the AI & Automation Cohort</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" style="height:180px; border-radius:10px;">
+        <img src="media/presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the IEEE Women in Engineering meet, Seoul</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="kanaka_miura.jpg" alt="Gallery Photo 2" style="height:180px; border-radius:10px;">
+        <img src="media/kanaka_miura.jpg" alt="Gallery Photo 2" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Receiving Kanako Miura Award</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="poster_humanoids.jpg" alt="Gallery Photo 3" style="height:180px; border-radius:10px;">
+        <img src="media/poster_humanoids.jpg" alt="Gallery Photo 3" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting Poster at Humanoids 2025</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="Exxon.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/Exxon.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Site visit at ExxonMobil Singapore REfinery</figcaption>
       </figure>
 
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="control.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/control.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Talk on control basics</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="EBAJA_Grp.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/EBAJA_Grp.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Electric Offroading Vehicle</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="grinding_wheel.png" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/grinding_wheel.png" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Workshop fabrication</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="sports.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/sports.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Sports and fun</figcaption>
       </figure>
       <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="Talk.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;">
+        <img src="media/Talk.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
         <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Sports day</figcaption>
       </figure>
 
