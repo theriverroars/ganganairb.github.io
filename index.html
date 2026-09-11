@@ -15,7 +15,10 @@
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        
+        <a href="#work-experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#patents-publications">Publications</a>
+        <a href="#awards">Awards</a>
         <!-- <a href="#contact">Contact</a> -->
       </nav>
     </div>
@@ -337,7 +340,7 @@
   <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; margin-top: 2em; justify-items: center;"> -->
 
       <!-- iLQR with NN Project (Compact Card) -->
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <video autoplay loop muted playsinline style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em; display:block;" loading="lazy">
         <source src="media/cartpole.webm" type="video/webm">
         <img src="media/cartpole.gif" alt="iLQR with online neural dynamics learning" loading="lazy" decoding="async">
@@ -353,7 +356,7 @@
     </article>
 
     <!-- Safe Swarm Navigation with CBFs -->
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <img src="media/swarm_cbf.png" 
           alt="Safe swarm navigation using control barrier functions" 
           style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
@@ -365,26 +368,26 @@
 
     
 
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <img src="media/SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Comparison b/w Kimera and RTAB</h5>
       <p style="font-size: 0.9em;">3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
     </article>
 
-    <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <!-- <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <img src="media/Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Frontier Exploration</h5>
       <p style="font-size: 0.9em;">Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
     </article> -->
 
 
-    <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <img src="media/Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Formation control</h5>
       <p style="font-size: 0.9em;">Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
     </article>
 
-    <!-- <article class="card" style="text-align: center; padding: 1em; border: 1px solid #ddd; border-radius: 10px;">
+    <!-- <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
       <img src="media/fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
       <h5>Option Critic Implementation</h5>
       <p style="font-size: 0.9em;">Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
@@ -490,46 +493,55 @@
 
           <section class="wrap" id="work-experience">
       <h3>Work Experience</h3>
-      <div class="grid">
-        <article class="card">
-          <div style="display:flex; align-items:flex-start; gap:16px;">
-            <img src="media/addverb-1000x1000.webp" alt="Addverb Technologies logo" style="width:110px; height:auto; object-fit:contain; margin-top:4px;" loading="lazy" decoding="async">
-            <div>
-              <h4>Robotics Engineer — Advanced Robotics, Addverb Technologies</h4>
-              <p>July 2026 – Present</p>
-              <ul>
-                <li>Working on <strong>Vision–Language–Action (VLA) models</strong> for robot manipulation and task execution.</li>
-              </ul>
+      <div class="timeline">
+        <article class="exp">
+          <div class="exp-logo">
+            <img src="media/addverb-1000x1000.webp" alt="Addverb Technologies logo" loading="lazy" decoding="async">
+          </div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h4>Robotics Engineer</h4>
+              <span class="exp-date">Jul 2026 – Present</span>
             </div>
+            <p class="exp-org">Advanced Robotics · Addverb Technologies</p>
+            <ul>
+              <li>Working on <strong>Vision–Language–Action (VLA) models</strong> for robot manipulation and task execution.</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
-          <div style="display:flex; align-items:flex-start; gap:16px;">
-            <img src="media/kyoto uni.png" alt="Kyoto University logo" style="width:110px; height:auto; object-fit:contain; margin-top:4px;" loading="lazy" decoding="async">
-            <div>
-              <h4>Visiting Researcher — Kyoto University (Morimoto Lab)</h4>
-              <p>Feb 2026 – June 2026</p>
-              <ul>
-                <li>Research internship with Prof. Jun Morimoto under the India–Japan LOTUS program.</li>
-                <li>Developed a Central Pattern Generator based locomotion framework with morphology-conditioned Bayesian optimisation of gait parameters, validated on quadruped hardware.</li>
-              </ul>
+        <article class="exp">
+          <div class="exp-logo">
+            <img src="media/kyoto uni.png" alt="Kyoto University logo" loading="lazy" decoding="async">
+          </div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h4>Visiting Researcher</h4>
+              <span class="exp-date">Feb 2026 – Jun 2026</span>
             </div>
+            <p class="exp-org">Kyoto University · Morimoto Lab</p>
+            <ul>
+              <li>Research internship with Prof. Jun Morimoto under the India–Japan LOTUS program.</li>
+              <li>Developed a Central Pattern Generator based locomotion framework with morphology-conditioned Bayesian optimisation of gait parameters, validated on quadruped hardware.</li>
+            </ul>
           </div>
         </article>
 
-        <article class="card">
-          <div style="display:flex; align-items:flex-start; gap:16px;">
-            <img src="media/M Logo.png" alt="ExxonMobil logo" style="width:110px; height:auto; object-fit:contain; margin-top:4px;" loading="lazy" decoding="async">
-            <div>
-              <h4>Project engineer - ExxonMobil Services and Technology Pvt Ltd</h4>
-              <p>July 2022 – July 2024</p>
-              <ul>
-                <li>Managed brownfield refinery projects for ExxonMobil Singapore Refinery, focused on Engineering management.</li>
-                <li>Recognized within the company thrice for bringing innovation into projects to optimize cost and schedule performance.</li>
-                <li> Spearheaded EM’s India safety program initiatives, working with multi-disciplinary teams across different regions.</li>
-              </ul>
+        <article class="exp">
+          <div class="exp-logo">
+            <img src="media/M Logo.png" alt="ExxonMobil logo" loading="lazy" decoding="async">
+          </div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h4>Project Engineer</h4>
+              <span class="exp-date">Jul 2022 – Jul 2024</span>
             </div>
+            <p class="exp-org">ExxonMobil Services and Technology Pvt Ltd</p>
+            <ul>
+              <li>Managed brownfield refinery projects for ExxonMobil Singapore Refinery, focused on Engineering management.</li>
+              <li>Recognized within the company thrice for bringing innovation into projects to optimize cost and schedule performance.</li>
+              <li>Spearheaded EM’s India safety program initiatives, working with multi-disciplinary teams across different regions.</li>
+            </ul>
           </div>
         </article>
       <!-- Patents
@@ -554,23 +566,33 @@
   <!-- Education Section -->
   <section class="wrap" id="education">
     <h3>Education</h3>
-    <div class="grid">
-      <article class="card">
-        <h4>M.Tech, Robotics and Autonomous Systems — Indian Institute of Science (IISc), Bangalore</h4>
-        <p>2024 – 2026 · Minor in Robotic Systems</p>
-        <ul>
-          <li>Thesis: <em>Gait adaptation in quadruped robots</em> — reinforcement learning and model predictive control for real-time gait adaptation.</li>
-        </ul>
+    <div class="timeline">
+      <article class="exp exp--nologo">
+        <div class="exp-body">
+          <div class="exp-head">
+            <h4>M.Tech, Robotics and Autonomous Systems</h4>
+            <span class="exp-date">2024 – 2026</span>
+          </div>
+          <p class="exp-org">Indian Institute of Science (IISc), Bangalore · Minor in Robotic Systems</p>
+          <ul>
+            <li>Thesis: <em>Gait adaptation in quadruped robots</em> — reinforcement learning and model predictive control for real-time gait adaptation.</li>
+          </ul>
+        </div>
       </article>
 
-      <article class="card">
-        <h4>B.Tech, Mechanical Engineering — National Institute of Technology (NIT) Calicut</h4>
-        <p>2018 – 2022</p>
-        <ul>
-          <li>Thesis: <em>Dynamic vibration absorber using Magneto-Rheological (MR) dampers</em> — design, fabrication and experimental validation.
-            <a href="https://github.com/theriverroars/PDVA/blob/main/ME4098D-BTech-Project-Report-Endsem(29-04-22).pdf" target="_blank">Report →</a>
-          </li>
-        </ul>
+      <article class="exp exp--nologo">
+        <div class="exp-body">
+          <div class="exp-head">
+            <h4>B.Tech, Mechanical Engineering</h4>
+            <span class="exp-date">2018 – 2022</span>
+          </div>
+          <p class="exp-org">National Institute of Technology (NIT) Calicut</p>
+          <ul>
+            <li>Thesis: <em>Dynamic vibration absorber using Magneto-Rheological (MR) dampers</em> — design, fabrication and experimental validation.
+              <a href="https://github.com/theriverroars/PDVA/blob/main/ME4098D-BTech-Project-Report-Endsem(29-04-22).pdf" target="_blank">Report →</a>
+            </li>
+          </ul>
+        </div>
       </article>
     </div>
   </section>
