@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ganga Resume — Robotics & Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="preload" as="image" href="media/profile picture.jpeg">
   <meta name="description" content="Portfolio of Ganga Nair B — robotics, controls, and software">
@@ -78,66 +81,108 @@
     </section>
 
   <!-- News & Highlights (place after the "Current work and interests" section and before Robotics Projects) -->
-  <section class="wrap" id="news-highlights" style="margin-top: 8px;">
+  <section class="wrap section-alt" id="news-highlights" style="margin-top: 8px;">
     <h3>News & Highlights</h3>
-          <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc; gap:8px;">
-      <li>
-        <strong>Jul 20, 2026 - Joined Addverb Technologies:</strong>
-        Started as a Robotics Engineer in the Advanced Robotics wing at Addverb Technologies, working on Vision–Language–Action (VLA) models for robot manipulation, after completing my M.Tech at IISc Bangalore.
-      </li>
-      <li>
-        <strong>Apr 17, 2026 - Accepted &amp; Presented - ICRA 2026 Workshop:</strong>
-        Paper titled "STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching" accepted at and presented at the 2026 IEEE International Conference on Robotics &amp; Automation (ICRA) Workshop on the Path Towards Generalizable Contact-Rich Robotics: Control and Representation.
-        <a href="https://arxiv.org/pdf/2604.08921" target="_blank">Paper Link →</a>
-      </li>
-      <li>
-        <strong>Feb – Jun 2026 - Research Internship at Kyoto University:</strong>
-        Worked with Prof. Jun Morimoto on Central Pattern Generator (CPG)-based locomotion research as part of the India Japan Circulation of Talented Youths in Science Program (LOTUS).
-      </li>
-      <li>
-        <strong>Dec 2025 - Presented - ICC 2025:</strong>
-        Oral presentation on paper titled "Real-time gait adaptation for quadruped robots using RL and MPC" at the Eleventh Indian Control Conference (ICC). 
-        <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website →</a>
+    <ol class="news">
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Jul 20, 2026</span>
+          <span class="news-tag tag-role">New Role</span>
+        </div>
+        <h4>Joined <a href="https://addverb.com" target="_blank" rel="noopener">Addverb Technologies</a></h4>
+        <p>Started as a Robotics Engineer in the Advanced Robotics wing, working on Vision–Language–Action (VLA) models for robot manipulation, after completing my M.Tech at IISc Bangalore.</p>
       </li>
 
-      <li>
-        <strong>Sep 2025 - Late Breaking Results - 2025 Humanoids Conference:</strong>
-        Poster presented on "Real-time gait adaptation for quadruped robots using RL and MPC" at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.
-      </li>
-      <!-- Add more highlights as list items here -->
-
-      <li>
-        <strong>Aug 2025 - Received Kanako Miura Award Grant - 2025 Humanoids Conference:</strong>
-        Received Kanako Miura Award Grant at 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Jun 23, 2026</span>
+          <span class="news-tag tag-patent">Patent</span>
+        </div>
+        <h4>Indian patent granted for MR-fluid vibration absorber</h4>
+        <p>“Magneto-rheological Fluid-Based Dynamic Vibration Absorber” granted as Indian Patent No. 593165.</p>
       </li>
 
-
-      <li>
-        <strong>Aug 2025 - Accepted - ICC 2025:</strong>
-        Paper "Real-time gait adaptation for quadruped robots using RL and MPC" accepted at the Eleventh Indian Control Conference (ICC). 
-        <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website →</a>
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Apr 17, 2026</span>
+          <span class="news-tag tag-paper">Paper</span>
+        </div>
+        <h4>Accepted &amp; presented at the ICRA 2026 Workshop</h4>
+        <p>“STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching” accepted at and presented at the 2026 IEEE International Conference on Robotics &amp; Automation (ICRA) Workshop on the Path Towards Generalizable Contact-Rich Robotics: Control and Representation.
+          <a href="https://arxiv.org/pdf/2604.08921" target="_blank">Paper →</a>
+        </p>
       </li>
-    </ul>
+
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Feb – Jun 2026</span>
+          <span class="news-tag tag-research">Research</span>
+        </div>
+        <h4>Research internship at <a href="https://www.kyoto-u.ac.jp/en" target="_blank" rel="noopener">Kyoto University</a></h4>
+        <p>Worked with Prof. Jun Morimoto on Central Pattern Generator (CPG)-based locomotion research as part of the India Japan Circulation of Talented Youths in Science Program (<a href="https://www.jst.go.jp/program/india/en/project/2025.html" target="_blank" rel="noopener">LOTUS</a>).</p>
+      </li>
+
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Dec 2025</span>
+          <span class="news-tag tag-talk">Talk</span>
+        </div>
+        <h4>Oral presentation at ICC 2025</h4>
+        <p>Presented “Real-time gait adaptation for quadruped robots using RL and MPC” at the Eleventh Indian Control Conference (ICC).
+          <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website →</a>
+        </p>
+      </li>
+
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Sep 2025</span>
+          <span class="news-tag tag-talk">Poster</span>
+        </div>
+        <h4>Late-breaking results at Humanoids 2025</h4>
+        <p>Poster presented on “Real-time gait adaptation for quadruped robots using RL and MPC” at the 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.</p>
+      </li>
+
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Aug 2025</span>
+          <span class="news-tag tag-award">Award</span>
+        </div>
+        <h4>Received the Kanako Miura Award Grant</h4>
+        <p>Awarded at the 2025 IEEE-RAS 24th International Conference on Humanoid Robots, Seoul, Korea.</p>
+      </li>
+
+      <li class="news-item">
+        <div class="news-meta">
+          <span class="news-date">Aug 2025</span>
+          <span class="news-tag tag-paper">Paper</span>
+        </div>
+        <h4>Accepted at ICC 2025</h4>
+        <p>“Real-time gait adaptation for quadruped robots using RL and MPC” accepted at the Eleventh Indian Control Conference (ICC).
+          <a href="https://sites.google.com/iisc.ac.in/autogait/home" target="_blank">Website →</a>
+        </p>
+      </li>
+      <!-- Add more highlights as <li class="news-item"> entries here -->
+    </ol>
 
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 12px;">
-      <figure style="margin: 0;">
-        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at Indian Control Conference 2025</figcaption>
+    <div class="news-figs">
+      <figure>
+        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" loading="lazy" decoding="async">
+        <figcaption>Presenting at Indian Control Conference 2025</figcaption>
       </figure>
-      <figure style="margin:0;">
-        <img src="media/poster_humanoids.jpg" alt="Presenting Poster at Humanoids 2025" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting Poster at Humanoids 2025</figcaption>
+      <figure>
+        <img src="media/poster_humanoids.jpg" alt="Presenting Poster at Humanoids 2025" loading="lazy" decoding="async">
+        <figcaption>Presenting Poster at Humanoids 2025</figcaption>
       </figure>
 
-      <figure style="margin:0;">
-        <img src="media/kanaka_miura.jpg" alt="Receiving award" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Receiving Kanako Miura Award</figcaption>
+      <figure>
+        <img src="media/kanaka_miura.jpg" alt="Receiving award" loading="lazy" decoding="async">
+        <figcaption>Receiving Kanako Miura Award</figcaption>
       </figure>
 
-      <!-- <figure style="margin:0;">
-        <img src="media/presenting_kanaka_miura.jpeg" alt="Presenting at the Women in Engineering conf" style="width:100%; height:150px; object-fit:cover; border-radius:8px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.85em; color:var(--muted); margin-top:6px;">Presenting at the Women in Engineering meet</figcaption>
+      <!-- <figure>
+        <img src="media/presenting_kanaka_miura.jpeg" alt="Presenting at the Women in Engineering conf" loading="lazy" decoding="async">
+        <figcaption>Presenting at the Women in Engineering meet</figcaption>
       </figure> -->
 
     </div>
@@ -148,23 +193,23 @@
   <h3>Robotics Projects</h3>
 
   <!-- Quadruped Project -->
-  <article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+  <article class="card project-card">
     
     <!-- First row: GIF (left) + Diagram (right) -->
-    <div style="grid-column: 1 / 2;">
-      <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;">
+    <div class="project-media">
+      <video autoplay loop muted playsinline>
         <source src="media/hardware results.webm" type="video/webm">
         <img src="media/hardware results.gif" alt="Quadruped RL Project" loading="lazy" decoding="async">
       </video>
     </div>
-    <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+    <div class="project-figure">
       <img src="media/Diagram_ICC_deploy.png" 
            alt="Deployment Diagram" 
-           style="width:80%; max-height: 250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+           loading="lazy" decoding="async">
     </div>
 
     <!-- Second row: description spans full width -->
-    <div style="grid-column: 1 / 3;">
+    <div class="project-body">
       <h4>Real-time gait adaptation using RL and MPC</h4>
       <p>
         Model-free RL policies for quadruped locomotion often converge to a single gait, limiting adaptability and efficiency. 
@@ -188,24 +233,24 @@
 
 
 <!-- STRIDE Dynamics Model Project -->
-<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+<article class="card project-card">
   
   <!-- First row: Robot demo (left) + Method diagram (right) -->
-  <div style="grid-column: 1 / 2;">
-    <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;" loading="lazy">
+  <div class="project-media">
+    <video autoplay loop muted playsinline loading="lazy">
       <source src="media/Simulation gif.webm" type="video/webm">
       <img src="media/Simulation gif.gif" alt="Quadruped locomotion using STRIDE dynamics model" loading="lazy" decoding="async">
     </video>
   </div>
 
-  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+  <div class="project-figure">
     <img src="media/STRIDE_concept.png" 
          alt="STRIDE structured generative dynamics model" 
-         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+         loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description -->
-  <div style="grid-column: 1 / 3;">
+  <div class="project-body">
     <h4>STRIDE: Physics-Guided Generative Dynamics for Robots</h4>
 
     <p>
@@ -235,23 +280,23 @@
 
 </article>
 
-<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+<article class="card project-card">
   
   <!-- First row: Demo + Method diagram -->
-  <div style="grid-column: 1 / 2;">
+  <div class="project-media">
     <img src="media/PIML concept.png" 
          alt="Safe optimal control using physics-informed learning" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+         loading="lazy" decoding="async">
   </div>
 
-  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+  <div class="project-figure">
     <img src="media/PIML method.png" 
          alt="Physics-informed machine learning framework for safety-critical control" 
-         style="width:80%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+         loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description -->
-  <div style="grid-column: 1 / 3;">
+  <div class="project-body">
     <h4>Physics-Informed Learning for Safe and Optimal Control</h4>
 
     <p>
@@ -280,23 +325,23 @@
 </article>
 
 <!-- Quadruped CPG-RL Project -->
-<article class="card" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5em; align-items: start; margin-bottom: 2em;">
+<article class="card project-card">
   
   <!-- First row: GIF (left) + Diagram (right) -->
-  <div style="grid-column: 1 / 2;">
-    <video autoplay loop muted playsinline style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em; display:block;" loading="lazy">
+  <div class="project-media">
+    <video autoplay loop muted playsinline loading="lazy">
       <source src="media/Recording 2025-07-18 063642.webm" type="video/webm">
       <img src="media/Recording 2025-07-18 063642.gif" alt="Quadruped locomotion using CPG-RL" loading="lazy" decoding="async">
     </video>
   </div>
-  <div style="grid-column: 2 / 3; display:flex; justify-content:center; align-items:center;">
+  <div class="project-figure">
     <img src="media/Screenshot 2026-03-08 131904.png" 
          alt="CPG-RL control framework" 
-         style="width:100%; max-height:250px; border-radius:8px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+         loading="lazy" decoding="async">
   </div>
 
   <!-- Second row: description spans full width -->
-  <div style="grid-column: 1 / 3;">
+  <div class="project-body">
     <h4>Quadruped Locomotion using CPG-RL - Study on Morphology-Aware Optimisation</h4>
     <p>
       All legged animals rely on rhythmic primitives to achieve robust and efficient locomotion across diverse terrains.
@@ -307,7 +352,7 @@
     <p>
       In this work, CPGs encode the underlying rhythmic structure. The parameters of the CPGs, including frequency, amplitude, and phase parameters, are optimised conditioned on the morphology using Conditional Bayesian Optimization. We us a Tree Parzen Estimator to model the performance landscape and guide the search.
       <p>
-      The framework was developed in collaboration with <strong>Prof. Jun Morimoto (Kyoto University)</strong> and tested on hardware.
+      The framework was developed in collaboration with <strong>Prof. Jun Morimoto</strong> (<a href="https://www.s-im.t.kyoto-u.ac.jp/en/information/laboratory/lm" target="_blank" rel="noopener">Morimoto Lab, Kyoto University</a>) and tested on hardware.
     </p>
     <p>
       <!-- Optional links -->
@@ -336,17 +381,17 @@
  -->
 
    <!-- Smaller Projects Grid -->
-  <div class="small-projects-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2em; justify-items: center;">
+  <div class="small-projects-grid">
   <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; margin-top: 2em; justify-items: center;"> -->
 
       <!-- iLQR with NN Project (Compact Card) -->
-    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
-      <video autoplay loop muted playsinline style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em; display:block;" loading="lazy">
+    <article class="card mini-card">
+      <video autoplay loop muted playsinline loading="lazy">
         <source src="media/cartpole.webm" type="video/webm">
         <img src="media/cartpole.gif" alt="iLQR with online neural dynamics learning" loading="lazy" decoding="async">
       </video>
       <h5>Model-Based Control with Online Dynamics Learning</h5>
-      <p style="font-size: 0.9em;">
+      <p>
         Explored control of nonlinear systems with unknown dynamics by integrating iLQR with an online-trained neural network for dynamics estimation.
       </p>
       <p style="font-size: 0.85em;">
@@ -356,41 +401,41 @@
     </article>
 
     <!-- Safe Swarm Navigation with CBFs -->
-    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
+    <article class="card mini-card">
       <img src="media/swarm_cbf.png" 
           alt="Safe swarm navigation using control barrier functions" 
-          style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+          loading="lazy" decoding="async">
       <h5>Safe Swarm Navigation using Control Barrier Functions</h5>
-      <p style="font-size: 0.9em;">
+      <p>
         Designed a control framework for multi-quadrotor swarms using Control Barrier Functions, combined with priority-based ordering to enable collision-free traversal through constrained environments.
       </p>
     </article>
 
     
 
-    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
-      <img src="media/SLAM.png" alt="Comparison b/w Kimera and RTAB" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+    <article class="card mini-card">
+      <img src="media/SLAM.png" alt="Comparison b/w Kimera and RTAB" loading="lazy" decoding="async">
       <h5>Comparison b/w Kimera and RTAB</h5>
-      <p style="font-size: 0.9em;">3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
+      <p>3D point cloud reconstruction using SLAM and subsequent semantic segmentation. Comparison to RTAB-Map for accuracy.</p>
     </article>
 
-    <!-- <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
-      <img src="media/Frontier exploration.png" alt="Frontier Exploration" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+    <!-- <article class="card mini-card">
+      <img src="media/Frontier exploration.png" alt="Frontier Exploration" loading="lazy" decoding="async">
       <h5>Frontier Exploration</h5>
-      <p style="font-size: 0.9em;">Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
+      <p>Implementation of a coordinated multi-robot frontier exploration strategy in an unknown gridworld environment.</p>
     </article> -->
 
 
-    <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
-      <img src="media/Leader follower.png" alt="Project 3" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+    <article class="card mini-card">
+      <img src="media/Leader follower.png" alt="Project 3" loading="lazy" decoding="async">
       <h5>Formation control</h5>
-      <p style="font-size: 0.9em;">Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
+      <p>Leader–follower formation control for heterogeneous multi-agent systems with real-time leader tracking.</p>
     </article>
 
-    <!-- <article class="card" style="text-align: center; padding: 1em; border-radius: 10px;">
-      <img src="media/fourrooms-heatmap.png" alt="Four rooms result" style="width:100%; max-height:120px; object-fit:cover; border-radius:6px; margin-bottom:0.5em;" loading="lazy" decoding="async">
+    <!-- <article class="card mini-card">
+      <img src="media/fourrooms-heatmap.png" alt="Four rooms result" loading="lazy" decoding="async">
       <h5>Option Critic Implementation</h5>
-      <p style="font-size: 0.9em;">Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
+      <p>Exploration and navigation to goal in Four Rooms environment using Option Critic reinforcement learning technique.</p>
     </article> -->
 
   </div>
@@ -400,11 +445,11 @@
 
 
     <!-- Hardware Projects Section -->
-    <section class="wrap" id="hardware-projects">
+    <section class="wrap section-alt" id="hardware-projects">
     <h3>Projects in Mechanical Engineering</h3>
     <div class="grid">
-        <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
-        <img src="media/MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;" loading="lazy" decoding="async">
+        <article class="card hw-card">
+        <img src="media/MR_DVA.png" alt="Dynamic vibration absorber with MR Damper" loading="lazy" decoding="async">
         <div>
             <h4>Dynamic vibration absorber with MR Damper</h4>
             <p>Designed, fabricated, and tested a dynamic vibration absorber using a Magneto-Rheological fluid based damper. Included mathematical modelling, CAD modelling and simulation, optimisation, fabrication of test setup and experimental validation.</p>
@@ -416,8 +461,8 @@
         </article>
         <!-- Add more hardware projects here, following the same structure -->
 
-        <article class="card" style="display: flex; align-items: flex-start; gap: 1.5em;">
-        <img src="media/Baja.png" alt="Suspension for Electric All-Terrain-Vehicle" style="width:180px; border-radius:8px; margin-bottom:0.5em; flex-shrink:0;" loading="lazy" decoding="async">
+        <article class="card hw-card">
+        <img src="media/Baja.png" alt="Suspension for Electric All-Terrain-Vehicle" loading="lazy" decoding="async">
         <div>
             <h4>Suspension for Electric All-Terrain-Vehicle</h4>
             <p>Designed, simulated and fabricated an Electric All terrain Vehicle for Electric BAJA 2025. My focus was on suspension design and optimization for rough terrain including shock absorption, stability and steering performance, without compromising on manufacturability and cost-effectiveness.</p>
@@ -468,7 +513,7 @@
             <a href="https://link.springer.com/chapter/10.1007/978-981-99-1288-9_48" target="_blank">Paper</a>
           </li>
           <li>
-            Patent: Jagadeesha T., Ganga N.B., et al., Magneto-rheological Fluid-Based Dynamic Vibration Absorber, Indian Patent Application No. 202241036483, filed Jun 24, 2022. Status: Granted.
+            <strong>Patent:</strong> Jagadeesha T., Ganga N.B., et al., "Magneto-rheological Fluid-Based Dynamic Vibration Absorber", <strong>Indian Patent No. 593165</strong>, granted Jun 23, 2026 (Application No. 202241036483, filed Jun 24, 2022).
             <br>
             <!-- <a href="https://link.springer.com/chapter/10.1007/978-981-99-1288-9_48" target="_blank">Paper</a> -->
           </li>
@@ -491,7 +536,7 @@
     </div>
     </section>
 
-          <section class="wrap" id="work-experience">
+          <section class="wrap section-alt" id="work-experience">
       <h3>Work Experience</h3>
       <div class="timeline">
         <article class="exp">
@@ -503,7 +548,7 @@
               <h4>Robotics Engineer</h4>
               <span class="exp-date">Jul 2026 – Present</span>
             </div>
-            <p class="exp-org">Advanced Robotics · Addverb Technologies</p>
+            <p class="exp-org">Advanced Robotics · <a href="https://addverb.com" target="_blank" rel="noopener">Addverb Technologies</a></p>
             <ul>
               <li>Working on <strong>Vision–Language–Action (VLA) models</strong> for robot manipulation and task execution.</li>
             </ul>
@@ -519,9 +564,9 @@
               <h4>Visiting Researcher</h4>
               <span class="exp-date">Feb 2026 – Jun 2026</span>
             </div>
-            <p class="exp-org">Kyoto University · Morimoto Lab</p>
+            <p class="exp-org"><a href="https://www.kyoto-u.ac.jp/en" target="_blank" rel="noopener">Kyoto University</a> · <a href="https://www.s-im.t.kyoto-u.ac.jp/en/information/laboratory/lm" target="_blank" rel="noopener">Morimoto Lab</a></p>
             <ul>
-              <li>Research internship with Prof. Jun Morimoto under the India–Japan LOTUS program.</li>
+              <li>Research internship with Prof. Jun Morimoto under the India–Japan <a href="https://www.jst.go.jp/program/india/en/project/2025.html" target="_blank" rel="noopener">LOTUS</a> program.</li>
               <li>Developed a Central Pattern Generator based locomotion framework with morphology-conditioned Bayesian optimisation of gait parameters, validated on quadruped hardware.</li>
             </ul>
           </div>
@@ -536,7 +581,7 @@
               <h4>Project Engineer</h4>
               <span class="exp-date">Jul 2022 – Jul 2024</span>
             </div>
-            <p class="exp-org">ExxonMobil Services and Technology Pvt Ltd</p>
+            <p class="exp-org"><a href="https://corporate.exxonmobil.com" target="_blank" rel="noopener">ExxonMobil</a> Services and Technology Pvt Ltd</p>
             <ul>
               <li>Managed brownfield refinery projects for ExxonMobil Singapore Refinery, focused on Engineering management.</li>
               <li>Recognized within the company thrice for bringing innovation into projects to optimize cost and schedule performance.</li>
@@ -573,7 +618,7 @@
             <h4>M.Tech, Robotics and Autonomous Systems</h4>
             <span class="exp-date">2024 – 2026</span>
           </div>
-          <p class="exp-org">Indian Institute of Science (IISc), Bangalore · Minor in Robotic Systems</p>
+          <p class="exp-org"><a href="https://iisc.ac.in" target="_blank" rel="noopener">Indian Institute of Science (IISc), Bangalore</a> · <a href="https://www.stochlab.com" target="_blank" rel="noopener">Stoch Lab</a> · Minor in Robotic Systems</p>
           <ul>
             <li>Thesis: <em>Gait adaptation in quadruped robots</em> — reinforcement learning and model predictive control for real-time gait adaptation.</li>
           </ul>
@@ -586,7 +631,7 @@
             <h4>B.Tech, Mechanical Engineering</h4>
             <span class="exp-date">2018 – 2022</span>
           </div>
-          <p class="exp-org">National Institute of Technology (NIT) Calicut</p>
+          <p class="exp-org"><a href="https://www.nitc.ac.in" target="_blank" rel="noopener">National Institute of Technology (NIT) Calicut</a></p>
           <ul>
             <li>Thesis: <em>Dynamic vibration absorber using Magneto-Rheological (MR) dampers</em> — design, fabrication and experimental validation.
               <a href="https://github.com/theriverroars/PDVA/blob/main/ME4098D-BTech-Project-Report-Endsem(29-04-22).pdf" target="_blank">Report →</a>
@@ -599,7 +644,7 @@
 
 
   <!-- Add this section before the Patents & Publications section or wherever you prefer -->
-<section class="wrap" id="awards">
+<section class="wrap section-alt" id="awards">
   <h3>Awards & Acknowledgements</h3>
   <ul style="margin-top:12px; padding-left:1.25rem; list-style: disc;">
     <li>
@@ -632,69 +677,72 @@
 
     <section class="wrap" id="gallery" style="margin-top: 40px;">
     <h3>Photo Gallery</h3>
-    <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 8px;">
+    <p class="gallery-hint">Scroll sideways to browse →</p>
+    <div class="gallery-wrap">
+    <div class="gallery-scroller">
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/Japan.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Working at Kyoto</figcaption>
-      </figure>
-
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/RL_Workshop.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presented at RL Workshop, IISc</figcaption>
+      <figure>
+        <img src="media/Japan.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" loading="lazy" decoding="async">
+        <figcaption>Working at Kyoto</figcaption>
       </figure>
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at Indian Control Conference 2025</figcaption>
+      <figure>
+        <img src="media/RL_Workshop.jpeg" alt="Presented at RL Workshop 2026 conducted by CSA dept, IISC" loading="lazy" decoding="async">
+        <figcaption>Presented at RL Workshop, IISc</figcaption>
       </figure>
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/AIAS ppt2.jpeg" alt="Presenting at AIAS Cohort 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the AI & Automation Cohort</figcaption>
+      <figure>
+        <img src="media/ICC ppt 2.jpeg" alt="Presenting at Indian Control Conference" loading="lazy" decoding="async">
+        <figcaption>Presenting at Indian Control Conference 2025</figcaption>
       </figure>
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting at the IEEE Women in Engineering meet, Seoul</figcaption>
-      </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/kanaka_miura.jpg" alt="Gallery Photo 2" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Receiving Kanako Miura Award</figcaption>
-      </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/poster_humanoids.jpg" alt="Gallery Photo 3" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Presenting Poster at Humanoids 2025</figcaption>
+      <figure>
+        <img src="media/AIAS ppt2.jpeg" alt="Presenting at AIAS Cohort 4" loading="lazy" decoding="async">
+        <figcaption>Presenting at the AI & Automation Cohort</figcaption>
       </figure>
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/Exxon.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Site visit at ExxonMobil Singapore REfinery</figcaption>
+      <figure>
+        <img src="media/presenting_kanaka_miura.jpeg" alt="Gallery Photo 1" loading="lazy" decoding="async">
+        <figcaption>Presenting at the IEEE Women in Engineering meet, Seoul</figcaption>
+      </figure>
+      <figure>
+        <img src="media/kanaka_miura.jpg" alt="Gallery Photo 2" loading="lazy" decoding="async">
+        <figcaption>Receiving Kanako Miura Award</figcaption>
+      </figure>
+      <figure>
+        <img src="media/poster_humanoids.jpg" alt="Gallery Photo 3" loading="lazy" decoding="async">
+        <figcaption>Presenting Poster at Humanoids 2025</figcaption>
       </figure>
 
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/control.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Talk on control basics</figcaption>
+      <figure>
+        <img src="media/Exxon.jpg" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Site visit at ExxonMobil Singapore REfinery</figcaption>
       </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/EBAJA_Grp.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Electric Offroading Vehicle</figcaption>
+
+      <figure>
+        <img src="media/control.jpg" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Talk on control basics</figcaption>
       </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/grinding_wheel.png" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Workshop fabrication</figcaption>
+      <figure>
+        <img src="media/EBAJA_Grp.jpg" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Electric Offroading Vehicle</figcaption>
       </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/sports.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Sports and fun</figcaption>
+      <figure>
+        <img src="media/grinding_wheel.png" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Workshop fabrication</figcaption>
       </figure>
-      <figure style="display: inline-block; margin: 0 12px 0 0;">
-        <img src="media/Talk.jpg" alt="Gallery Photo 4" style="height:180px; border-radius:10px;" loading="lazy" decoding="async">
-        <figcaption style="font-size:0.9em; color:var(--muted); margin-top:4px;">Sports day</figcaption>
+      <figure>
+        <img src="media/sports.jpg" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Sports and fun</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Talk.jpg" alt="Gallery Photo 4" loading="lazy" decoding="async">
+        <figcaption>Sports day</figcaption>
       </figure>
 
 
       <!-- Add more figures as needed -->
+    </div>
     </div>
   </section>
 
